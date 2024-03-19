@@ -1,6 +1,6 @@
 {
   "name": "@davis-lp/reactobelisco",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Libreria de componentes Obelisco basado en React js.",
   "type": "commonjs",
   "scripts": {
