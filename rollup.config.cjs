@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+const globImport = require("rollup-plugin-glob-import");
 const resolve = require("@rollup/plugin-node-resolve");
 const commonjs = require("@rollup/plugin-commonjs");
 const typescript = require("@rollup/plugin-typescript");
@@ -27,6 +28,9 @@ module.exports = [
       commonjs(),
       typescript({tsconfig: "./tsconfig.json"}),
       postcss(),
+      globImport({
+        exclude: "**/front/**/*.ts",
+      }),
     ],
   },
   {
